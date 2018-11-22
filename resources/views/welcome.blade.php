@@ -78,7 +78,7 @@
                     @endauth
                 </div>
             @endif
-
+		<h2>To jest test111</h2>
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
