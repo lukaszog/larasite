@@ -1,9 +1,7 @@
-version: 0.0
-run-as: root
-
+version: 0.1
 phases:
-  build:
-    command:
-      - script/deploy.sh
+  pre_build:
+    commands:
+      - composer install
 
 
