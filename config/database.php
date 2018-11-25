@@ -42,6 +42,21 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
+            'host' => env('RDS_HOST_NAME', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('RDS_DB_NAME', 'forge'),
+            'username' => env('RDS_USERNAME', 'forge'),
+            'password' => env('RDS_PASSWORD', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+        ],
+	'mysql-local' => [	    
+            'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'forge'),
@@ -54,7 +69,7 @@ return [
             'prefix_indexes' => true,
             'strict' => true,
             'engine' => null,
-        ],
+	],
 
         'pgsql' => [
             'driver' => 'pgsql',
