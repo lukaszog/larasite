@@ -42,7 +42,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('RDS_HOST_NAME', '127.0.0.1'),
+            'host' => env('RDS_HOSTNAME', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('RDS_DB_NAME', 'forge'),
             'username' => env('RDS_USERNAME', 'forge'),
